@@ -48,6 +48,6 @@ The R folder contains:
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/HFAnalyticsLab/High_cost_users/blob/master/LICENSE).
+This project is licensed under the [MIT License](https://github.com/HFAnalyticsLab/MM_in_households/blob/master/LICENSE).
 
                                                                                                                            
