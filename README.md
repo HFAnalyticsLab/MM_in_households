@@ -23,7 +23,7 @@ As the data used for this analysis is not publically available, the code cannot 
 
 ### Requirements
 
-These scripts were written in SAS Enterprise Guide Version 7.12 and RStudio Version 1.1.383. 
+These scripts were written in SAS Enterprise Guide Version 7.12, RStudio Version 1.1.383 and Stata MP15. 
 The following R packages are used: 
 
 * **[haven](https://cran.r-project.org/web/packages/haven/index.html)**
@@ -39,7 +39,11 @@ We limited the sample to people aged 50+ that registered at their practice withi
 The R folder contains:   
 * **01_Derive_variables_for_regression** - Prepare variables for the two-part regression models
 
-* **02_Two_part_regression_models** - Combines logistic model for whether has a non-zero cost with a gamma distribution for cost where this is non-zero. Predicted values are estimated for each level of household multimorbidity. Confidence intervals are coming soon....
+* **02_Two_part_regression_models** - Combines logistic model for whether has a non-zero cost with a gamma distribution for cost where this is non-zero. Predicted values are estimated for each level of household multimorbidity. One option for obtaining confidence intervals is to use bootstrapping. We opted instead to switch to Stata and use the twopm command.
+
+The Stata folder contains:
+* **twopm_costs** - Runs two part models and obtains estimated mean (s.e.) costs across both parts of the model.
+
 
 ## Authors - please feel free to get in touch
                                                                                                                             
